@@ -1,0 +1,10 @@
+<h1><%= @snack.name %> Snack</h1>
+
+<h2>Snack: <%= snack.name %>: $<%=snack.price %></h2>
+<h2>Locations</h2>
+<%= @snack.machines.each do |locale| %>
+<li>
+  <%= locale.name %>
+</li>
+
+<h2>Average Price All Snacks: <%= "#{.average}" %></h2>
